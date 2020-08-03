@@ -1,0 +1,7 @@
+{
+	"name": "ir-curso-datafactory",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "integartion run time\n"
+	}
+}
