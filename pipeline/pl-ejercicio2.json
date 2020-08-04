@@ -1,0 +1,59 @@
+{
+	"name": "pl-ejercicio2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "rangeList",
+					"value": {
+						"value": "@range(1,pipeline().parameters.NumeroAnalizar)",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Set variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@variables('rangeList')",
+						"type": "Expression"
+					},
+					"isSequential": true
+				}
+			}
+		],
+		"parameters": {
+			"NumeroAnalizar": {
+				"type": "int",
+				"defaultValue": 1
+			}
+		},
+		"variables": {
+			"factorial": {
+				"type": "String",
+				"defaultValue": "1"
+			},
+			"aux": {
+				"type": "String"
+			},
+			"rangeList": {
+				"type": "Array"
+			}
+		},
+		"annotations": []
+	}
+}
