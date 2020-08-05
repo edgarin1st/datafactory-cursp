@@ -1,0 +1,19 @@
+{
+	"name": "PAR_Orden",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_curso_data_factory",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "aci-ingesta"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
