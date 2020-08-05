@@ -10,6 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "Orden_@{dataset().nombreArchivo}.parquet",
+				"folderPath": "Orden/@{dataset(),directorio]",
 				"container": "aci-ingesta"
 			},
 			"compressionCodec": "snappy"
