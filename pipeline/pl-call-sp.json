@@ -26,7 +26,11 @@
 				"outputs": [
 					{
 						"referenceName": "PAR_Orden",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"directorio": "@formatDateTime(pipeline().parameters.fechaCorte.'yyyy/MM')",
+							"NombreArchivo": "@pipeline().parameters.fechaCorte"
+						}
 					}
 				]
 			}
