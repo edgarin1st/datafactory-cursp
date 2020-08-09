@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "select distinct isnull(location_type, 'Vacio') as location_type\n  FROM [dbo].[orden]",
+						"sqlReaderQuery": "select distinct isnull(location_type, 'Nulo') as location_type\n  FROM [dbo].[orden]",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
