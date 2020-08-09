@@ -5,6 +5,11 @@
 			"referenceName": "ordenarchivo",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"location_type": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
