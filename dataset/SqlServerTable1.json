@@ -1,0 +1,144 @@
+{
+	"name": "SqlServerTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Sql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "akeed_order_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "customer_id",
+				"type": "varchar"
+			},
+			{
+				"name": "item_count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "grand_total",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 4
+			},
+			{
+				"name": "payment_mode",
+				"type": "varchar"
+			},
+			{
+				"name": "promo_code",
+				"type": "varchar"
+			},
+			{
+				"name": "vendor_discount_amount",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 4
+			},
+			{
+				"name": "promo_code_discount_percentage",
+				"type": "varchar"
+			},
+			{
+				"name": "is_favorite",
+				"type": "varchar"
+			},
+			{
+				"name": "is_rated",
+				"type": "varchar"
+			},
+			{
+				"name": "vendor_rating",
+				"type": "varchar"
+			},
+			{
+				"name": "driver_rating",
+				"type": "varchar"
+			},
+			{
+				"name": "deliverydistance",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 4
+			},
+			{
+				"name": "preparationtime",
+				"type": "varchar"
+			},
+			{
+				"name": "delivery_time",
+				"type": "varchar"
+			},
+			{
+				"name": "order_accepted_time",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "driver_accepted_time",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ready_for_pickup_time",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "picked_up_time",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "delivered_time",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "delivery_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "vendor_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "created_at",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "location_number",
+				"type": "varchar"
+			},
+			{
+				"name": "location_type",
+				"type": "varchar"
+			},
+			{
+				"name": "cid_x_loc_num_x_vendor",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "orden"
+		}
+	}
+}
