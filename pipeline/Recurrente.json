@@ -42,7 +42,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@array(activity('TraeLocacionesData').output.value)",
+						"value": "@array(activity('Traevalores').output.value)",
 						"type": "Expression"
 					},
 					"isSequential": true,
